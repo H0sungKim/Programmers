@@ -66,10 +66,6 @@ struct P468371 {
     }
     
     @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-        // Swift Testing Documentation
-        // https://developer.apple.com/documentation/testing
-        
         let testCases: [(input: [[Int]], expected: Int)] = [
             ([[2, 1, 2], [5, 1, 1]], 13),
             ([[2, 3, 2], [3, 1, 3], [2, 1, 1]], 11),
@@ -80,7 +76,6 @@ struct P468371 {
             #expect(solution(testCase.input) == testCase.expected)
         }
     }
-
 }
 
 extension Int {

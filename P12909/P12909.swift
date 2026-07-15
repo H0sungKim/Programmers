@@ -29,10 +29,6 @@ struct P12909 {
     }
     
     @Test func testCase() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-        // Swift Testing Documentation
-        // https://developer.apple.com/documentation/testing
-        
         let testCases: [(input: String, expected: Bool)] = [
             ("()()", true),
             ("(())()", true),
@@ -43,5 +39,4 @@ struct P12909 {
             #expect(solution(testCase.input) == testCase.expected)
         }
     }
-
 }
