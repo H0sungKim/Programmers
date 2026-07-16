@@ -1,6 +1,6 @@
 //
 //  P468371.swift
-//  P468371
+//  Programmers
 //
 //  Created by Hosung.Kim on 2026.07.15.
 //
@@ -66,19 +66,12 @@ struct P468371 {
     }
     
     @Test func test() async throws {
-        let testCases: [(input: [[Int]], expected: Int)] = [
-            (input: [[2, 1, 2], [5, 1, 1]], expected: 13),
-            (input: [[2, 3, 2], [3, 1, 3], [2, 1, 1]], expected: 11),
-            (input: [[3, 3, 3], [5, 4, 2], [2, 1, 2]], expected: 193),
-            (input: [[1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 1]], expected: -1),
-        ]
-        
-        zip(
-            testCases.map(\.input).map(solution),
-            testCases.map(\.expected)
-        ).forEach { output, expected in
-            #expect(output == expected)
-        }
+        assert(solution, testCases: [
+            TestCase(input: [[2, 1, 2], [5, 1, 1]], expected: 13),
+            TestCase(input: [[2, 3, 2], [3, 1, 3], [2, 1, 1]], expected: 11),
+            TestCase(input: [[3, 3, 3], [5, 4, 2], [2, 1, 2]], expected: 193),
+            TestCase(input: [[1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 1]], expected: -1),
+        ])
     }
 }
 

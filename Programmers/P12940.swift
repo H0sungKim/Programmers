@@ -1,6 +1,6 @@
 //
 //  P12940.swift
-//  P12940
+//  Programmers
 //
 //  Created by Hosung.Kim on 2026.07.16.
 //
@@ -23,16 +23,9 @@ struct P12940 {
     }
     
     @Test func test() async throws {
-        let testCases: [(input: (Int, Int), expected: [Int])] = [
-            (input: (3, 12), expected: [3, 12]),
-            (input: (2, 5), expected: [1, 10]),
-        ]
-        
-        zip(
-            testCases.map(\.input).map(solution),
-            testCases.map(\.expected)
-        ).forEach { output, expected in
-            #expect(output == expected)
-        }
+        assert(solution, testCases: [
+            TestCase(input: (3, 12), expected: [3, 12]),
+            TestCase(input: (2, 5), expected: [1, 10]),
+        ])
     }
 }

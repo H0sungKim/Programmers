@@ -1,6 +1,6 @@
 //
 //  P12903.swift
-//  P12903
+//  Programmers
 //
 //  Created by Hosung.Kim on 2026.07.14.
 //
@@ -16,16 +16,9 @@ struct P12903 {
     }
     
     @Test func test() async throws {
-        let testCases: [(input: String, expected: String)] = [
-            (input: "abcde", expected: "c"),
-            (input: "qwer", expected: "we"),
-        ]
-        
-        zip(
-            testCases.map(\.input).map(solution),
-            testCases.map(\.expected)
-        ).forEach { output, expected in
-            #expect(output == expected)
-        }
+        assert(solution, testCases: [
+            TestCase(input: "abcde", expected: "c"),
+            TestCase(input: "qwer", expected: "we"),
+        ])
     }
 }
