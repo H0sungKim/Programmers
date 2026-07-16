@@ -22,11 +22,25 @@
 		965EB4D7300680B800EA7BCB /* P12903.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12903.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965EB4E230075B0C00EA7BCB /* P12909.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12909.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965EB4F33007675300EA7BCB /* P468371.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P468371.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		965EB4FE3008CE5200EA7BCB /* P12940.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12940.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		965EB5063008D61D00EA7BCB /* Exceptions for "Programmers" folder in "P12903" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.swift,
+			);
+			target = 965EB4D6300680B800EA7BCB /* P12903 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		965EB4CB3006808700EA7BCB /* Programmers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				965EB5063008D61D00EA7BCB /* Exceptions for "Programmers" folder in "P12903" target */,
+			);
 			path = Programmers;
 			sourceTree = "<group>";
 		};
@@ -43,6 +57,11 @@
 		965EB4F43007675300EA7BCB /* P468371 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = P468371;
+			sourceTree = "<group>";
+		};
+		965EB4FF3008CE5200EA7BCB /* P12940 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = P12940;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -68,6 +87,11 @@
 			files = (
 			);
 		};
+		965EB4FB3008CE5200EA7BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +102,7 @@
 				965EB4D8300680B800EA7BCB /* P12903 */,
 				965EB4E330075B0C00EA7BCB /* P12909 */,
 				965EB4F43007675300EA7BCB /* P468371 */,
+				965EB4FF3008CE5200EA7BCB /* P12940 */,
 				965EB4CA3006808700EA7BCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +114,7 @@
 				965EB4D7300680B800EA7BCB /* P12903.xctest */,
 				965EB4E230075B0C00EA7BCB /* P12909.xctest */,
 				965EB4F33007675300EA7BCB /* P468371.xctest */,
+				965EB4FE3008CE5200EA7BCB /* P12940.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +194,24 @@
 			productReference = 965EB4F33007675300EA7BCB /* P468371.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		965EB4FD3008CE5200EA7BCB /* P12940 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965EB5023008CE5200EA7BCB /* Build configuration list for PBXNativeTarget "P12940" */;
+			buildPhases = (
+				965EB4FA3008CE5200EA7BCB /* Sources */,
+				965EB4FB3008CE5200EA7BCB /* Frameworks */,
+				965EB4FC3008CE5200EA7BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				965EB4FF3008CE5200EA7BCB /* P12940 */,
+			);
+			name = P12940;
+			productName = P12940;
+			productReference = 965EB4FE3008CE5200EA7BCB /* P12940.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +234,9 @@
 					965EB4F23007675300EA7BCB = {
 						CreatedOnToolsVersion = 27.0;
 					};
+					965EB4FD3008CE5200EA7BCB = {
+						CreatedOnToolsVersion = 27.0;
+					};
 				};
 			};
 			buildConfigurationList = 965EB4C43006808700EA7BCB /* Build configuration list for PBXProject "Programmers" */;
@@ -210,6 +257,7 @@
 				965EB4D6300680B800EA7BCB /* P12903 */,
 				965EB4E130075B0C00EA7BCB /* P12909 */,
 				965EB4F23007675300EA7BCB /* P468371 */,
+				965EB4FD3008CE5200EA7BCB /* P12940 */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +274,11 @@
 			);
 		};
 		965EB4F13007675300EA7BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		965EB4FC3008CE5200EA7BCB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -249,6 +302,11 @@
 			);
 		};
 		965EB4EF3007675300EA7BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		965EB4FA3008CE5200EA7BCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
 			);
@@ -510,6 +568,42 @@
 			};
 			name = Release;
 		};
+		965EB5033008CE5200EA7BCB /* Debug configuration for PBXNativeTarget "P12940" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G4QV27Y5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hosungkim.P12940;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		965EB5043008CE5200EA7BCB /* Release configuration for PBXNativeTarget "P12940" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G4QV27Y5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hosungkim.P12940;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -550,6 +644,14 @@
 			buildConfigurations = (
 				965EB4F73007675300EA7BCB /* Debug configuration for PBXNativeTarget "P468371" */,
 				965EB4F83007675300EA7BCB /* Release configuration for PBXNativeTarget "P468371" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		965EB5023008CE5200EA7BCB /* Build configuration list for PBXNativeTarget "P12940" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965EB5033008CE5200EA7BCB /* Debug configuration for PBXNativeTarget "P12940" */,
+				965EB5043008CE5200EA7BCB /* Release configuration for PBXNativeTarget "P12940" */,
 			);
 			defaultConfigurationName = Release;
 		};
