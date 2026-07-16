@@ -65,15 +65,19 @@ struct P468371 {
         return y == 0 ? x : gcd(y, x%y)
     }
     
-    @Test func example() async throws {
+    @Test func test() async throws {
         let testCases: [(input: [[Int]], expected: Int)] = [
-            ([[2, 1, 2], [5, 1, 1]], 13),
-            ([[2, 3, 2], [3, 1, 3], [2, 1, 1]], 11),
-            ([[3, 3, 3], [5, 4, 2], [2, 1, 2]], 193),
-            ([[1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 1]], -1),
+            (input: [[2, 1, 2], [5, 1, 1]], expected: 13),
+            (input: [[2, 3, 2], [3, 1, 3], [2, 1, 1]], expected: 11),
+            (input: [[3, 3, 3], [5, 4, 2], [2, 1, 2]], expected: 193),
+            (input: [[1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 1]], expected: -1),
         ]
-        for testCase in testCases {
-            #expect(solution(testCase.input) == testCase.expected)
+        
+        zip(
+            testCases.map(\.input).map(solution),
+            testCases.map(\.expected)
+        ).forEach { output, expected in
+            #expect(output == expected)
         }
     }
 }

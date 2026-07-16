@@ -22,18 +22,16 @@ struct P12940 {
         return y == 0 ? x : gcd(y, x%y)
     }
     
-    @Test func testCase() async throws {
-        let input = [
-            (3, 12),
-            (2, 5),
+    @Test func test() async throws {
+        let testCases: [(input: (Int, Int), expected: [Int])] = [
+            (input: (3, 12), expected: [3, 12]),
+            (input: (2, 5), expected: [1, 10]),
         ]
-        let expected = [
-            [3, 12],
-            [1, 10],
-        ]
-        let output = input.map(solution)
         
-        zip(output, expected).forEach { output, expected in
+        zip(
+            testCases.map(\.input).map(solution),
+            testCases.map(\.expected)
+        ).forEach { output, expected in
             #expect(output == expected)
         }
     }

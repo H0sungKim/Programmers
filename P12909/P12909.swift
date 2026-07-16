@@ -28,15 +28,19 @@ struct P12909 {
         return true
     }
     
-    @Test func testCase() async throws {
+    @Test func test() async throws {
         let testCases: [(input: String, expected: Bool)] = [
-            ("()()", true),
-            ("(())()", true),
-            (")()(", false),
-            ("(()(", false),
+            (input: "()()", expected: true),
+            (input: "(())()", expected: true),
+            (input: ")()(", expected: false),
+            (input: "(()(", expected: false),
         ]
-        for testCase in testCases {
-            #expect(solution(testCase.input) == testCase.expected)
+        
+        zip(
+            testCases.map(\.input).map(solution),
+            testCases.map(\.expected)
+        ).forEach { output, expected in
+            #expect(output == expected)
         }
     }
 }

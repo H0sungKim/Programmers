@@ -15,13 +15,17 @@ struct P12903 {
         return String(s[startIndex...endIndex])
     }
     
-    @Test func testCase() async throws {
+    @Test func test() async throws {
         let testCases: [(input: String, expected: String)] = [
-            ("abcde", "c"),
-            ("qwer", "we"),
+            (input: "abcde", expected: "c"),
+            (input: "qwer", expected: "we"),
         ]
-        for testCase in testCases {
-            #expect(solution(testCase.input) == testCase.expected)
+        
+        zip(
+            testCases.map(\.input).map(solution),
+            testCases.map(\.expected)
+        ).forEach { output, expected in
+            #expect(output == expected)
         }
     }
 }
