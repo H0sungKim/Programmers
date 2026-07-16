@@ -6,44 +6,14 @@
 	objectVersion = 110;
 	objects = {
 
-/* Begin PBXCopyFilesBuildPhase section */
-		965EB4C73006808700EA7BCB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolder = None;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		965EB4C93006808700EA7BCB /* Programmers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programmers; sourceTree = BUILT_PRODUCTS_DIR; };
 		965EB4D7300680B800EA7BCB /* P12903.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12903.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965EB4E230075B0C00EA7BCB /* P12909.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12909.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965EB4F33007675300EA7BCB /* P468371.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P468371.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965EB4FE3008CE5200EA7BCB /* P12940.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12940.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		965EB5063008D61D00EA7BCB /* Exceptions for "Programmers" folder in "P12903" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				main.swift,
-			);
-			target = 965EB4D6300680B800EA7BCB /* P12903 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		965EB4CB3006808700EA7BCB /* Programmers */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				965EB5063008D61D00EA7BCB /* Exceptions for "Programmers" folder in "P12903" target */,
-			);
-			path = Programmers;
-			sourceTree = "<group>";
-		};
 		965EB4D8300680B800EA7BCB /* P12903 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = P12903;
@@ -67,11 +37,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		965EB4C63006808700EA7BCB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			files = (
-			);
-		};
 		965EB4D4300680B800EA7BCB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
@@ -98,7 +63,6 @@
 		965EB4C03006808700EA7BCB = {
 			isa = PBXGroup;
 			children = (
-				965EB4CB3006808700EA7BCB /* Programmers */,
 				965EB4D8300680B800EA7BCB /* P12903 */,
 				965EB4E330075B0C00EA7BCB /* P12909 */,
 				965EB4F43007675300EA7BCB /* P468371 */,
@@ -110,7 +74,6 @@
 		965EB4CA3006808700EA7BCB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				965EB4C93006808700EA7BCB /* Programmers */,
 				965EB4D7300680B800EA7BCB /* P12903.xctest */,
 				965EB4E230075B0C00EA7BCB /* P12909.xctest */,
 				965EB4F33007675300EA7BCB /* P468371.xctest */,
@@ -122,24 +85,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		965EB4C83006808700EA7BCB /* Programmers */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 965EB4D03006808700EA7BCB /* Build configuration list for PBXNativeTarget "Programmers" */;
-			buildPhases = (
-				965EB4C53006808700EA7BCB /* Sources */,
-				965EB4C63006808700EA7BCB /* Frameworks */,
-				965EB4C73006808700EA7BCB /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			fileSystemSynchronizedGroups = (
-				965EB4CB3006808700EA7BCB /* Programmers */,
-			);
-			name = Programmers;
-			productName = Programmers;
-			productReference = 965EB4C93006808700EA7BCB /* Programmers */;
-			productType = "com.apple.product-type.tool";
-		};
 		965EB4D6300680B800EA7BCB /* P12903 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 965EB4DB300680B800EA7BCB /* Build configuration list for PBXNativeTarget "P12903" */;
@@ -222,9 +167,6 @@
 				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
-					965EB4C83006808700EA7BCB = {
-						CreatedOnToolsVersion = 27.0;
-					};
 					965EB4D6300680B800EA7BCB = {
 						CreatedOnToolsVersion = 27.0;
 					};
@@ -253,7 +195,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				965EB4C83006808700EA7BCB /* Programmers */,
 				965EB4D6300680B800EA7BCB /* P12903 */,
 				965EB4E130075B0C00EA7BCB /* P12909 */,
 				965EB4F23007675300EA7BCB /* P468371 */,
@@ -286,11 +227,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		965EB4C53006808700EA7BCB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			files = (
-			);
-		};
 		965EB4D3300680B800EA7BCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
@@ -431,32 +367,6 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-			};
-			name = Release;
-		};
-		965EB4D13006808700EA7BCB /* Debug configuration for PBXNativeTarget "Programmers" */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G4QV27Y5P;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		965EB4D23006808700EA7BCB /* Release configuration for PBXNativeTarget "Programmers" */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G4QV27Y5P;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -612,14 +522,6 @@
 			buildConfigurations = (
 				965EB4CE3006808700EA7BCB /* Debug configuration for PBXProject "Programmers" */,
 				965EB4CF3006808700EA7BCB /* Release configuration for PBXProject "Programmers" */,
-			);
-			defaultConfigurationName = Release;
-		};
-		965EB4D03006808700EA7BCB /* Build configuration list for PBXNativeTarget "Programmers" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				965EB4D13006808700EA7BCB /* Debug configuration for PBXNativeTarget "Programmers" */,
-				965EB4D23006808700EA7BCB /* Release configuration for PBXNativeTarget "Programmers" */,
 			);
 			defaultConfigurationName = Release;
 		};
