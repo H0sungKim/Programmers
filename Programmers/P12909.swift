@@ -8,7 +8,17 @@
 import Testing
 
 struct P12909 {
-    
+    @Test func test() async throws {
+        assert(solution, testCases: [
+            TestCase(input: "()()", expected: true),
+            TestCase(input: "(())()", expected: true),
+            TestCase(input: ")()(", expected: false),
+            TestCase(input: "(()(", expected: false),
+        ])
+    }
+}
+
+extension P12909 {
     func solution(_ s: String) -> Bool {
         var parenthesesCount: Int = 0
         
@@ -26,14 +36,5 @@ struct P12909 {
         
         guard parenthesesCount == 0 else { return false }
         return true
-    }
-    
-    @Test func test() async throws {
-        assert(solution, testCases: [
-            TestCase(input: "()()", expected: true),
-            TestCase(input: "(())()", expected: true),
-            TestCase(input: ")()(", expected: false),
-            TestCase(input: "(()(", expected: false),
-        ])
     }
 }

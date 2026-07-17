@@ -8,7 +8,15 @@
 import Testing
 
 struct P12940 {
-    
+    @Test func test() async throws {
+        assert(solution, testCases: [
+            TestCase(input: (3, 12), expected: [3, 12]),
+            TestCase(input: (2, 5), expected: [1, 10]),
+        ])
+    }
+}
+
+extension P12940 {
     func solution(_ n: Int, _ m: Int) -> [Int] {
         return [gcd(n, m), lcm(n, m)]
     }
@@ -20,12 +28,5 @@ struct P12940 {
     
     func gcd(_ x: Int, _ y: Int) -> Int {
         return y == 0 ? x : gcd(y, x%y)
-    }
-    
-    @Test func test() async throws {
-        assert(solution, testCases: [
-            TestCase(input: (3, 12), expected: [3, 12]),
-            TestCase(input: (2, 5), expected: [1, 10]),
-        ])
     }
 }

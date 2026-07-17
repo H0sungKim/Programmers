@@ -8,25 +8,17 @@
 import Testing
 
 struct P468371 {
-    
-    enum TrafficLight: Int {
-        case green
-        case yellow
-        case red
+    @Test func test() async throws {
+        assert(solution, testCases: [
+            TestCase(input: [[2, 1, 2], [5, 1, 1]], expected: 13),
+            TestCase(input: [[2, 3, 2], [3, 1, 3], [2, 1, 1]], expected: 11),
+            TestCase(input: [[3, 3, 3], [5, 4, 2], [2, 1, 2]], expected: 193),
+            TestCase(input: [[1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 1]], expected: -1),
+        ])
     }
-    
-    struct Cycle {
-        let size: Int
-        let values: Set<Int>
-        
-        func repeatedValues(count: Int) -> Set<Int> {
-            let repeated = (0..<count).flatMap { multiplier in
-                values.map { $0 + (size * multiplier) }
-            }
-            return Set(repeated)
-        }
-    }
-    
+}
+
+extension P468371 {
     func solution(_ signals: [[Int]]) -> Int {
         let cycles = signals.map { signal in
             let cycleSize = signal.reduce(0, +)
@@ -65,16 +57,25 @@ struct P468371 {
         return y == 0 ? x : gcd(y, x%y)
     }
     
-    @Test func test() async throws {
-        assert(solution, testCases: [
-            TestCase(input: [[2, 1, 2], [5, 1, 1]], expected: 13),
-            TestCase(input: [[2, 3, 2], [3, 1, 3], [2, 1, 1]], expected: 11),
-            TestCase(input: [[3, 3, 3], [5, 4, 2], [2, 1, 2]], expected: 193),
-            TestCase(input: [[1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 1]], expected: -1),
-        ])
+    enum TrafficLight: Int {
+        case green
+        case yellow
+        case red
+    }
+    
+    struct Cycle {
+        let size: Int
+        let values: Set<Int>
+        
+        func repeatedValues(count: Int) -> Set<Int> {
+            let repeated = (0..<count).flatMap { multiplier in
+                values.map { $0 + (size * multiplier) }
+            }
+            return Set(repeated)
+        }
     }
 }
 
 extension Int {
-    static let resultNotFound = -1
+    fileprivate static let resultNotFound = -1
 }
