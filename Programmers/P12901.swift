@@ -7,8 +7,6 @@
 
 import Testing
 
-import Foundation
-
 struct P12901 {
     @Test func test() async throws {
         assert(solution, testCases: [

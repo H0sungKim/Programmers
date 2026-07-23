@@ -5,8 +5,6 @@
 //  Created by Hosung.Kim on 2026.07.23.
 //
 
-import Foundation
-
 import Testing
 
 struct P12922 {
